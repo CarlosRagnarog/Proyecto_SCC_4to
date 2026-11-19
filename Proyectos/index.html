@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOCIEDAD CIENTÍFICA | Proyectos</title>
+  <meta name="description" content="Sociedad Científica: proyectos realizados, en progreso y futuros.">
+  <link rel="icon" href="assets/logo-sociedad-cientifica.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="nav" id="nav">
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navMenu" aria-label="Principal">
+      <a href="#principal">Principal</a>
+      <a href="#proyectos">Proyectos</a>
+      <a class="nav__logo" href="#principal" aria-label="Sociedad Científica, inicio">
+        <img src="assets/logo-sociedad-cientifica.jpeg" alt="Logotipo de Sociedad Científica">
+      </a>
+      <a href="#integrantes">Integrantes</a>
+      <a href="#redes">Nuestras redes</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ SECCIÓN 1: PORTADA ============ -->
+    <section class="hero" id="principal">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__brand">SOCIEDAD CIENTÍFICA</p>
+        <h1 class="hero__title" aria-label="Proyectos">
+          <span class="hero__solid">PROYECTOS</span>
+          <!-- Las repeticiones delineadas se generan en script.js -->
+          <span class="hero__echoes" id="echoes" aria-hidden="true"></span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- ============ SECCIÓN 2: PROYECTOS REALIZADOS ============ -->
+    <section class="section section--done" id="proyectos">
+      <h2 class="section__title reveal">Proyectos <em>realizados</em></h2>
+      <div class="orbit reveal" id="orbit" role="region" aria-roledescription="carrusel" aria-label="Proyectos realizados">
+        <button class="orbit__arrow orbit__arrow--prev" id="prev" aria-label="Proyecto anterior">&#10094;</button>
+        <div class="orbit__stage" id="stage"></div>
+        <button class="orbit__arrow orbit__arrow--next" id="next" aria-label="Proyecto siguiente">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- ============ SECCIÓN 3: FUTUROS Y EN PROGRESO ============ -->
+    <section class="section section--next" id="futuros">
+      <h2 class="section__title reveal">Lo que <em>viene</em></h2>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <!-- ============ INTEGRANTES ============ -->
+    <section class="section section--small" id="integrantes">
+      <h2 class="section__title reveal">Integrantes</h2>
+      <p class="reveal muted">Aquí puedes presentar al equipo de la Sociedad Científica.</p>
+    </section>
+  </main>
+
+  <!-- ============ REDES ============ -->
+  <footer class="footer" id="redes">
+    <h2 class="section__title">Nuestras redes</h2>
+    <p class="muted">Reemplaza estos enlaces por los de tus redes oficiales.</p>
+    <ul class="footer__links">
+      <li><a href="#" rel="noopener">Instagram</a></li>
+      <li><a href="#" rel="noopener">TikTok</a></li>
+      <li><a href="#" rel="noopener">WhatsApp</a></li>
+    </ul>
+    <small>© SOCIEDAD CIENTÍFICA</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
